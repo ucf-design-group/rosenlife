@@ -1,9 +1,9 @@
 /*!
- Theme Name: MiniBill
- Theme URI: http://github.com/billcolumbia/MiniBill
+ Theme Name: RosenLife
+ Theme URI: https://github.com/ucf-design-group/rosenlife
  Description: A minimal starting point for WordPress, adapted from Underscores.me
- Author: Bill Columbia, AJ Foster
- Author URI: http://billcolumbia.com, http://aj-foster.com
+ Author: Chris Judge, John Costallos
+ Author URI: http://christopherjudge.us, http://jpcostallos.com
  Version: 0.91
  Tags: minimal, fast, light
  License: None, feel free to hack :)
@@ -14,17 +14,17 @@
 @import url("http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700")
 
 // Necessary imports, feel free to explore and hack though :)
-@import reset, menu, footer
+@import reset, variables, menu, footer
 
 // Base variables
-$baseTypeFace: 'Open Sans', sans-serif
+$baseTypeFace: Verdana, sans-serif
 
 // Base layout/type
 html
 	font-size: 16px
 body
 	font: 62.5%/1.5 $baseTypeFace
-	font-weight: 600 
+	font-weight: 300 
 	
 // Clearfix (to use, @extend %clearfix)
 %clearfix
@@ -34,3 +34,10 @@ body
 		display: table 
 	&:after
 		clear: both
+
+
+//Colorization
+body
+	background-color: $yellow
+footer, nav
+	background-color: $brown
