@@ -11,20 +11,24 @@
 
 // Change this to whatever you'd like. This is just the defualt so we 
 // have something nice to prototype with.
-@import url("http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700")
+@import url("http://fonts.googleapis.com/css?family=Lato:300,400,700")
 
 // Necessary imports, feel free to explore and hack though :)
-@import reset, variables, menu, footer
+@import reset, variables, menu, footer, home
 
 // Base variables
-$baseTypeFace: Verdana, sans-serif
+$baseTypeFace: 'Lato', sans-serif
 
 // Base layout/type
 html
 	font-size: 16px
 body
 	font: 62.5%/1.5 $baseTypeFace
-	font-weight: 300 
+	font-weight: 400 
+
+footer
+	color: white
+	font-size: 1.78em
 	
 // Clearfix (to use, @extend %clearfix)
 %clearfix
@@ -38,6 +42,19 @@ body
 
 //Colorization
 body
-	background-color: $yellow
-footer, nav
 	background-color: $brown
+header
+	background-color: #B4C25C
+	background: linear-gradient(#B4C25C, #FFD561)
+nav
+	background-color: #FFD561
+	background: linear-gradient(#E9CF5F, #FFD561)
+footer
+	background-color: black
+
+//Header
+.logowrap
+	padding: 1em 0
+	width: 1200px
+	margin: auto
+	
