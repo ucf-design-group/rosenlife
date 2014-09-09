@@ -23,7 +23,7 @@
 		<div class="page">
 			<header>
 				<div class="logowrap">
-					<img src="<?php echo get_stylesheet_directory_uri(); ?>/resources/rosen-logo.png" alt="RosenLife Logo">
+					<img src="<?php echo get_stylesheet_directory_uri(); ?>/resources/rosen-logo.png" alt="RosenLife">
 				</div>
 				<nav class="main-menu full">
 					<div class="screen-reader-text skip-link"><a href="#UPDATE ME" title="Skip to content">Skip to content</a></div>
