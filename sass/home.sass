@@ -1,28 +1,40 @@
-//Splash Image
-.splashwrap
-	width: 100%
-	height: 800px
-	border-bottom: 1px solid rgba(0,0,0,0.25)
+.page-home
+	//Splash Image
+	.splashwrap
+		width: 100%
+		height: 800px
+		border-bottom: 1px solid $strokeColor
 
-.splashimage
-	background-image: url('http://placekitten.com/1920/800')
-	width: 100%
-	max-width: 100%
-	height: 100%
-	position: relative
+	.splashimage
+		background-image: url('http://placekitten.com/1920/800')
+		width: 100%
+		max-width: 100%
+		height: 100%
+		position: relative
 
-.innertext
-	position: absolute
-	bottom: 0
-	width: 35%
-	margin-left: 20%
-	margin-bottom: 1%
-	background-color: $whiteO
-	border-radius: 10px
-	padding: 2.5em
+	.innertext
+		position: absolute
+		bottom: 0
+		width: 35%
+		margin-left: 20%
+		margin-bottom: 1%
+		background-color: $whiteO
+		border-radius: 5px
+		padding: 2.5em
+		box-shadow: 2px 2px 5px $strokeColor
 
-	h1
-		font-size: 2.5em
-		margin-bottom: 0.75em
-	p
-		font-size: 2em
+		h2
+			margin-bottom: 0.5em
+		p
+			font-size: 2em
+
+	.events
+		width: 1200px
+		margin: auto
+
+	.event
+		a
+			float: left
+			margin-right: 3em
+
+		@extend %clearfix
