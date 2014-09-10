@@ -1,0 +1,52 @@
+.page-about
+
+	//Exec Board --------------------------------------------- //
+	section.exec-board
+		max-width: 100%
+		width: 1200px
+		padding: 1em
+		margin: auto
+		@extend %clearfix
+
+		h2
+			font-size: 4em
+			text-align: center
+			margin-bottom: 1em
+	
+	article.leader
+		float: left
+		width: 380px
+		height: 380px
+		margin-right: 1.25%
+		margin-bottom: 1%
+		background: cover
+		background-repeat: no-repeat
+		background-position: center
+		position: relative
+
+		&:nth-of-type(3n+3)
+			margin-right: 0
+
+	div.leaderinfo
+		width: 95%
+		padding-bottom: 0.5em
+		background-color: rgba(245,245,245,0.85)
+		position: absolute
+		bottom: 0
+		margin-left: 2.5%
+		margin-bottom: 2.5%
+		text-align: center
+		font-weight: 500
+
+		h3
+			font-size: 2em
+
+		span, a
+			font-size: 1.25em
+
+		span
+			margin: 0 0.45em 0 0.1em
+
+
+			&:last-of-type
+				margin: 0 0.45em 0 0.75em
