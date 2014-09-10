@@ -26,10 +26,6 @@ body
 	font: 62.5%/1.5 $baseTypeFace
 	font-weight: 400 
 
-footer
-	color: white
-	font-size: 1.78em
-	
 // Clearfix (to use, @extend %clearfix)
 %clearfix
 	zoom: 1
@@ -39,22 +35,40 @@ footer
 	&:after
 		clear: both
 
+//Headings
+h1
+	font-size: 4em
+h2
+	font-size: 3em
+h3
+	font-size: 2em
+p
+	font-size: 1.75em
+
 
 //Colorization
 body
-	background-color: $brown
+	background-color: whitesmoke
 header
-	background-color: #B4C25C
-	background: linear-gradient(#B4C25C, #FFD561)
+	background-color: $green
+	background: linear-gradient($green, $yellow)
 nav
-	background-color: #FFD561
-	background: linear-gradient(#E9CF5F, #FFD561)
+	background-color: $yellow
+	background: linear-gradient(#E9CF5F, $yellow)
 footer
-	background-color: black
+	background-color: $brown
 
 //Header
 .logowrap
-	padding: 1em 0
+	padding: 2em 0 0 0
 	width: 1200px
 	margin: auto
+	
+//Main
+.main
+	width: 1200px
+	margin: 5em auto
+
+	h1
+		margin-bottom: 0.25em
 	
