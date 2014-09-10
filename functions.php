@@ -93,8 +93,31 @@ function custom_post_types() {
 		'taxonomies' => array(),
 		'has_archive' => false,
 		));
+
+	register_post_type('exec-board', array(
+	'labels' => array(
+		'name' => 'Executive Board',
+		'singular_name' => 'Board Member'),
+	'public' => true,
+	'hierarchical' => false,
+	'supports' => array('title', 'editor', 'thumbnail'),
+	'taxonomies' => array(),
+	'has_archive' => false
+	));
+
+	register_post_type('fb-albums', array(
+	'labels' => array(
+		'name' => 'FB Albums',
+		'singular_name' => 'FB Album'),
+	'public' => true,
+	'hierarchical' => false,
+	'supports' => array('title'),
+	'taxonomies' => array(),
+	'has_archive' => false
+	));
 }
-//add_action('init', 'custom_post_types');
+
+add_action('init', 'custom_post_types');
 
 
 /* Change dashboard icons for the custom post types.
@@ -124,5 +147,7 @@ function cpt_icons() {
 /* To include other collections of functions, include_once() the relevant files here. */
 
 include_once("functions/functions-nav.php");
+include_once("functions/functions-board.php");
+include_once("functions/functions-albums.php");
 
 ?>
