@@ -51,10 +51,14 @@ body
 	background-color: whitesmoke
 header
 	background-color: $green
-	background: linear-gradient($green, $yellow)
+	background-image:  -webkit-linear-gradient($green,$yellow )
+	background-image:  -o-linear-gradient($green,$yellow )
+	background-image:  linear-gradient($green,$yellow )
 nav
 	background-color: $yellow
-	background: linear-gradient(#E9CF5F, $yellow)
+	background-image:  -webkit-linear-gradient(#E9CF5F, $yellow )
+	background-image:  -o-linear-gradient(#E9CF5F, $yellow )
+	background-image:  linear-gradient(#E9CF5F, $yellow )
 footer
 	background-color: $brown
 
@@ -71,8 +75,11 @@ footer
 
 	h1
 		margin-bottom: 0.25em
+	p
+		&:last-child
+			margin-bottom: 2em
 
 //Content Area
 .content-area
 	padding-bottom: 5em
-	
+	border-bottom: 1px solid $strokeColor
