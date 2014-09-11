@@ -16,8 +16,15 @@ nav.main-menu.full
 		width: 1200px
 		margin: auto
 
+		li.current
+			a
+				font-weight: 600
+
+				&:hover
+					color: black
+
 		li
-			float: left
+			display: inline-block
 			padding: 0 2em
 			border-right: 1px solid black
 
@@ -32,13 +39,6 @@ nav.main-menu.full
 
 				&:hover
 					color: lighten($brown, 20%)
-
-		li.current
-			a
-				font-weight: 600
-
-				&:hover
-					color: black
 
 	@extend %clearfix
 	
