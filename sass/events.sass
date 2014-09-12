@@ -1,0 +1,62 @@
+.page-events
+
+	.events
+		width: 1200px
+		margin: auto
+
+		@extend %clearfix
+
+	.event
+		width: 47.5%
+		float: left
+		margin-bottom: 2.5%
+		box-shadow: $boxShadow
+
+		&:nth-of-type(odd)
+			margin-right: 2.5%
+
+	.titlesection
+		background-color: $brownO
+		text-align: center
+		border-bottom: 1px solid $strokeColor
+		padding: 0.25em
+
+	.datesection
+		background-color: $whiteO
+		height: 255px
+		width: 215px
+		position: relative
+		text-align: center
+		border: 2px solid $strokeColor
+		margin: 2em 0 2em 2em
+
+		.month
+			background-color: $yellowO
+			font-size: 2.5em
+			border-bottom: 2px solid $strokeColor
+
+		.day
+			font-size: 6em
+			color: black
+			padding-top: 0.6em
+
+		.time
+			background-color: $greenO
+			bottom: 0
+			position: absolute
+			width: 100%
+			font-size: 2.5em
+			border-top: 2px solid $strokeColor
+
+	.moredetails
+		background-color: $brownO
+		border-top: 1px solid $strokeColor
+		padding: 0.25em
+
+		.moredetailstitle
+			text-align: right
+			padding-right: 0.25em
+		
+
+	.contentdetails
+		display: none
