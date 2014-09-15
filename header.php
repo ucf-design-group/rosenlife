@@ -5,6 +5,7 @@
 		<meta name="viewport" content="width=device-width" />
 		<meta http-equiv="X-UA-Compatible" content="chrome=1" />
 		<title><?php wp_title( '|', true, 'right' ); ?></title>
+		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 		<!--[if lt IE 9]>
 		<script src="<?php echo get_template_directory_uri(); ?>/js/html5.js" type="text/javascript"></script>
 		<![endif]-->
