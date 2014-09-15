@@ -7,12 +7,11 @@
 		@extend %clearfix
 
 	.event
-		width: 100%
+		width: 80%
 		margin: 2.5% auto
 		box-shadow: $boxShadow
 		padding-bottom: 0.25em
-		cursor: pointer
-		height: 345px
+		height: 500px
 		border-radius: 4.5px
 
 		@extend %clearfix
@@ -24,7 +23,7 @@
 	.titlesection
 		background-color: rgba(51,51,51,0.95)
 		text-align: center
-		padding: 0.5em
+		padding: 1em
 		border-bottom: 1px solid $strokeColor
 		border-radius: 4.5px 4.5px 0px 0px
 
@@ -39,7 +38,7 @@
 		position: relative
 		float: left
 		text-align: center
-		margin: 2em 0 2em 2em
+		margin: 10em 0 10em 3em
 		box-shadow: $boxShadow
 		border: 1px solid $strokeColorD
 
@@ -65,23 +64,29 @@
 
 	.moredetails
 		float: right
-		width: 100px
-		height: 289px
-		background-color: $whiteO
-		border-left: 1px solid $strokeColor
+		width: 60px
+		height: 434.5px
 		border-radius: 0px 0px 4.5px 0px
-
+		background-color: $whiteO
+		border-top-left-radius: 100px
+		border-bottom-left-radius: 100px
+		border-left: 1px solid $strokeColor
+		color: black
+		cursor: pointer
 		@extend %clearfix
+
+		&:hover
+			background-color: lighten($whiteO, 50%)
 
 
 	.moredetailstitle
 		font-size: 4.5em
-		padding-left: 0.7em
-		padding-top: 105px
+		padding-left: 0.325em
+		padding-top: 185px
 		height: 100%
 		float: left
-		margin-right: 1em
-
+		margin-right: 2.5em
+		
 
 	.contentdetails
 		display: none
@@ -90,7 +95,6 @@
 		div.contentdetails
 			display: block
 			width: 85%
-			padding: 4em 0
-
+			padding: 6em 0
 			p
 				padding-bottom: 1em
