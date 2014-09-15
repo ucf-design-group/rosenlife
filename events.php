@@ -38,7 +38,7 @@
 ?>	
 						<article class="event" style="background-image: url('<?php echo $image_url[0]; ?>'); background-position: center">
 						<div class="titlesection">
-							<h3><?php echo $title; ?></h3>
+							<h2><?php echo $title; ?></h2>
 						</div>
 						<div class="datesection">
 							<p class="month"><?php echo $month; ?></p>
@@ -46,7 +46,7 @@
 							<p class="time"><?php echo $time; ?></p>
 						</div>
 						<div class="moredetails">
-							<p class="moredetailstitle">More Details</p>
+							<p class="moredetailstitle"><i class="fa fa-chevron-left"></i></p>
 							<div class="contentdetails">
 							<p><?php echo $content; ?></p>
 <?php
