@@ -36,10 +36,11 @@
 							else
 								$dates = date('F jS, g:ia', $start) . " to " . date('F jS, g:ia', $end);
 ?>	
-						<article class="event" style="background-image: url('<?php echo $image_url[0]; ?>'); background-position: center">
+						<article class="event">
 						<div class="titlesection">
 							<h2><?php echo $title; ?></h2>
 						</div>
+						<img class="imagesection" src="<?php echo $image_url[0]; ?>" alt="Event Image">
 						<div class="datesection">
 							<p class="month"><?php echo $month; ?></p>
 							<p class="day"><?php echo $day; ?></p>
