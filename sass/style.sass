@@ -14,7 +14,7 @@
 @import url("http://fonts.googleapis.com/css?family=Lato:300,400,700")
 
 // Necessary imports, feel free to explore and hack though :)
-@import reset, variables, menu, footer, home, about, events
+@import reset, variables, menu, footer, home, about, events, involvement, fonts
 
 // Base variables
 $baseTypeFace: 'Lato', sans-serif
@@ -50,10 +50,11 @@ p
 body
 	background-color: whitesmoke
 header
-	background-color: $green
-	background-image:  -webkit-linear-gradient($green,$yellow )
-	background-image:  -o-linear-gradient($green,$yellow )
-	background-image:  linear-gradient($green,$yellow )
+	background-color: $yellow
+	border-top: 1px solid rgba(245,245,245,0.3)
+	// background-image:  -webkit-linear-gradient($green,$yellow )
+	// background-image:  -o-linear-gradient($green,$yellow )
+	// background-image:  linear-gradient($green,$yellow )
 // nav
 // 	background-color: $yellow
 // 	background-image:  -webkit-linear-gradient(#E9CF5F, $yellow )
@@ -61,6 +62,13 @@ header
 // 	background-image:  linear-gradient(#E9CF5F, $yellow )
 footer
 	background-color: $brown
+
+a
+	text-decoration: none
+	transition: color 0.3s ease-in-out
+
+	&:hover
+		color: lighten(rgba(0,0,238,1),30%)
 
 //Header
 .logowrap
@@ -70,6 +78,8 @@ footer
 .pineapplewrap
 	width: 100%
 	height: 100%
+	background: url('resources/Pineapples3.png') center
+
 
 //Main
 .main
