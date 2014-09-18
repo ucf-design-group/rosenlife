@@ -7,7 +7,8 @@
 		@extend %clearfix
 
 	.event
-		width: 80%
+		width: 100%
+		display: inline-block
 		margin: 2.5% auto
 		box-shadow: $boxShadow
 		padding-bottom: 0.25em
@@ -30,6 +31,12 @@
 		h2
 			color: whitesmoke
 			font-weight: 300
+
+	.imagesection
+		height: 434px
+		width: 282px
+		float: left
+		border-bottom-left-radius: 4.5px
 
 	.datesection
 		background-color: $whiteO
@@ -97,10 +104,3 @@
 			padding: 6em 0
 			p
 				padding-bottom: 1em
-
-			a
-				text-decoration: none
-				transition: color 0.3s ease-in-out
-
-				&:hover
-					color: lighten(rgba(0,0,238,1),30%)
