@@ -47,8 +47,6 @@
 							<p class="time"><?php echo $time; ?></p>
 						</div>
 						<div class="moredetails">
-							<p class="moredetailstitle"><i class="fa fa-chevron-left"></i></p>
-							<div class="contentdetails">
 							<p><?php echo $content; ?></p>
 <?php
 							if ($link != "") {
@@ -56,7 +54,6 @@
 							<p><a href="<?php echo $link; ?>" target="_blank">See more on Knight Connect!</a></p>
 <?php				}
 ?>
-							</div>
 						</div>
 						</article>
 <?php

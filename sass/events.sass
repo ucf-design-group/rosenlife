@@ -1,106 +1,77 @@
-.page-events
+.events
+	width: 1200px
+	margin: auto
 
-	.events
-		width: 1200px
-		margin: auto
+	@extend %clearfix
 
-		@extend %clearfix
+.event
+	width: 100%
+	display: inline-block
+	margin: 2.5% auto
+	box-shadow: $boxShadow
+	padding-bottom: 0.25em
+	height: 425px
+	border-radius: 4.5px
 
-	.event
-		width: 100%
-		display: inline-block
-		margin: 2.5% auto
-		box-shadow: $boxShadow
-		padding-bottom: 0.25em
-		height: 500px
-		border-radius: 4.5px
-
-		@extend %clearfix
-
-		// &:nth-of-type(odd)
-		// 	margin-right: 2.5%
+	@extend %clearfix
 
 
-	.titlesection
-		background-color: rgba(51,51,51,0.95)
-		text-align: center
-		padding: 1em
-		border-bottom: 1px solid $strokeColor
-		border-radius: 4.5px 4.5px 0px 0px
+.titlesection
+	background-color: rgba(34,31,32,1)
+	text-align: center
+	padding: 1em
+	border-bottom: 1px solid $strokeColor
+	border-radius: 4.5px 4.5px 0px 0px
 
-		h2
-			color: whitesmoke
-			font-weight: 300
+	h2
+		color: whitesmoke
+		font-weight: 300
 
-	.imagesection
-		height: 434px
-		width: 282px
-		float: left
-		border-bottom-left-radius: 4.5px
+.imagesection
+	height: 84.9%
+	width: 233px
+	float: left
+	border-bottom-left-radius: 4.5px
+	background-image:  -webkit-linear-gradient($green,$yellow )
+	background-image:  -o-linear-gradient($green,$yellow )
+	background-image:  linear-gradient($green,$yellow )
 
-	.datesection
-		background-color: $whiteO
-		height: 245px
-		width: 215px
-		position: relative
-		float: left
-		text-align: center
-		margin: 10em 0 10em 3em
-		box-shadow: $boxShadow
-		border: 1px solid $strokeColorD
+.datesection
+	background-color: $whiteO
+	height: 245px
+	width: 215px
+	position: relative
+	float: left
+	text-align: center
+	margin: 3em 0 0 3em
+	box-shadow: $boxShadow
+	border: 1px solid $strokeColorD
 
-		.month
-			background-color: $yellowO
-			font-size: 2.5em
-			padding: 2.5px
-			border-bottom: 1px solid $strokeColorD
+	.month
+		background-color: $yellowO
+		font-size: 2.5em
+		padding: 2.5px
+		border-bottom: 1px solid $strokeColorD
 
-		.day
-			font-size: 6em
-			color: black
-			padding-top: 0.6em
-
-		.time
-			background-color: $greenO
-			bottom: 0
-			position: absolute
-			width: 100%
-			font-size: 2.5em
-			padding: 2.5px
-			border-top: 1px solid $strokeColorD
-
-	.moredetails
-		float: right
-		width: 60px
-		height: 434.5px
-		background-color: $whiteO
-		border-top-left-radius: 100px
-		border-bottom-left-radius: 100px
-		border-left: 1px solid $strokeColor
+	.day
+		font-size: 6em
 		color: black
-		cursor: pointer
-		@extend %clearfix
+		padding-top: 0.6em
 
-		&:hover
-			background-color: lighten($whiteO, 50%)
+	.time
+		background-color: $greenO
+		bottom: 0
+		position: absolute
+		width: 100%
+		font-size: 2.5em
+		padding: 2.5px
+		border-top: 1px solid $strokeColorD
 
+.moredetails
+	float: left
+	width: 60%
+	color: black
+	@extend %clearfix
 
-	.moredetailstitle
-		font-size: 4.5em
-		padding-left: 0.325em
-		padding-top: 185px
-		height: 100%
-		float: left
-		margin-right: 2.5em
-		
-
-	.contentdetails
-		display: none
-
-	div.contentdetails--open
-		div.contentdetails
-			display: block
-			width: 85%
-			padding: 6em 0
-			p
-				padding-bottom: 1em
+	p
+		margin: 2em
