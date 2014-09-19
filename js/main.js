@@ -36,36 +36,7 @@ $(document).ready(function () {
 
 		$("nav.main-menu ul").slideToggle();
 		evt.preventDefault();
-	})
-
-// ---------- EVENT PAGE TILES ---------- //
-
-	var largeUp = false;
-
-	$('.moredetails').mouseleave(function(){
-			if(largeUp == true){
-				$(this).animate({width: "60px"});
-				$(this).removeClass('contentdetails--open');
-				$(this).children('.moredetailstitle').html('<i class="fa fa-chevron-left"></i>');
-				largeUp = false;
-			}
 	});
-
-	$('.moredetails').click(function(){
-		if(largeUp == false){
-			$(this).animate({width: "72%"});
-			$(this).addClass('contentdetails--open');
-			$(this).children('.moredetailstitle').html('<i class="fa fa-chevron-right"></i>');
-			largeUp = true;
-		} else if(largeUp == true){
-			$(this).animate({width: "60px"});
-			$(this).removeClass('contentdetails--open');
-			$(this).children('.moredetailstitle').html('<i class="fa fa-chevron-left"></i>');
-			largeUp = false;
-		}
-	});
-
-
 
 });
 
