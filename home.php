@@ -32,6 +32,9 @@
 							$link = get_post_meta($post->ID, 'oe-form-url', true);
 							$image = get_the_post_thumbnail($post->ID, 'medium');
 							$image_url = wp_get_attachment_image_src(get_post_thumbnail_id( $post->ID ), 'full');
+							$month = date('F', $start);
+							$day = date('j', $start);
+							$time = date('g:i a', $start);
 
 							if ($end == "none")
 								$dates = date('l F jS, g:ia', $start);
@@ -40,21 +43,24 @@
 							else
 								$dates = date('F jS, g:ia', $start) . " to " . date('F jS, g:ia', $end);
 ?>	
-						<article class="event">
-							<a class="img fancybox" href="<?php echo $image_url[0]; ?>"><?php echo $image; ?></a>
-							<div class="eventDescription">
-								<h3><?php echo $title; ?></h3>
-								<h4><?php echo $dates; ?></h4>
+							<article class="event">
+							<div class="titlesection">
+								<h2><?php echo $title; ?></h2>
+							</div>
+							<img class="imagesection" src="<?php echo $image_url[0]; ?>" alt="Event Image">
+							<div class="datesection">
+								<p class="month"><?php echo $month; ?></p>
+								<p class="day"><?php echo $day; ?></p>
+								<p class="time"><?php echo $time; ?></p>
+							</div>
+							<div class="moredetails">
 								<p><?php echo $content; ?></p>
-
-<?php
-							if ($link != "") {
-?>
-							<div class="button  button--dark"><a href="<?php echo $link; ?>" target="_blank">Find Out More!</a></div>
-							<!-- <p><a href="<?php echo site_url('/events/'); ?>">See More Events</a></p> -->
-							<div class="fb-share-button" data-href="<?php echo get_permalink(); ?>" data-type="button"></div>
-<?php				}
-?>
+	<?php
+								if ($link != "") {
+	?>
+								<p><a href="<?php echo $link; ?>" target="_blank">See more on Knight Connect!</a></p>
+	<?php				}
+	?>
 							</div>
 						</article>
 <?php
