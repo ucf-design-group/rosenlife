@@ -1,11 +1,15 @@
 .events
 	width: 1200px
+	max-width: 100%
+
 	margin: auto
+	padding: 1em
 
 	@extend %clearfix
 
 .event
-	width: 100%
+	width: 1200px
+	max-width: 100%
 	display: inline-block
 	margin: 2.5% auto
 	box-shadow: $boxShadow
@@ -15,7 +19,7 @@
 
 	@extend %clearfix
 
-
+	
 .titlesection
 	background-color: rgba(34,31,32,1)
 	text-align: center
@@ -28,7 +32,7 @@
 		font-weight: 300
 
 .imagesection
-	height: 84.9%
+	height: 359px
 	width: 233px
 	float: left
 	border-bottom-left-radius: 4.5px
@@ -69,9 +73,34 @@
 
 .moredetails
 	float: left
-	width: 60%
+	width: 54%
 	color: black
 	@extend %clearfix
 
 	p
 		margin: 2em
+
+@media screen and (max-width: 1060px)
+	.event
+		height: auto
+
+		
+	.datesection, .moredetails, .imagesection
+
+		// float: none
+		// display: block
+
+	.moredetails
+		font-size: .9em
+		float: left
+	.datesection
+		margin: 1.5em 0px 0px 1.5em
+		height: 150px
+		width: 120px
+
+		.month
+			font-size: 1.5em
+		.day
+			font-size: 3.5em
+		.time
+			font-size: 1.5em
