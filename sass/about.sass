@@ -52,3 +52,31 @@
 
 			&:last-of-type
 				margin: 0 0.45em 0 0.75em
+
+
+	@media screen and (max-width: 1200px)
+		section.exec-board
+			width: 800px
+
+		article.leader
+			&:nth-of-type(3n+3)
+				margin-right: 1.25%
+
+	@media screen and (max-width: 805px)
+		section.exec-board
+			width: 400px
+
+			h2
+				padding-left: 1em
+				padding-right: 1em
+
+		article.leader
+			margin-bottom: 3%
+			float: none
+
+	@media screen and (max-width: 403px)
+		section.exec-board
+			width: 100%
+
+		article.leader
+			width: 100%
