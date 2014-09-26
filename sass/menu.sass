@@ -48,18 +48,38 @@ nav.main-menu.full
 	
 
 nav.main-menu.compact
+	border-bottom: 1px solid rgba(0,0,0,0.25)
+	padding: 0
 
 	ul
 		display: none
 		width: 100%
+		text-align: center
 	
 	li
 		display: block
-	
+		font-size: 2em
+		background-color: $strokeColor
+		padding: 0.25em 0
+		margin-bottom: 1px
+
+		a
+			color: black
+
+			&:hover
+				color: whitesmoke
+
 	.compact-menu
 		display: block
 		text-align: center
+		font-size: 2em
+		padding: 1em
 
+		a
+			color: black
+
+			&:hover
+				color: lighten($brown,20%)
 
 .screen-reader-text
 	display: none
