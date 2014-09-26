@@ -81,17 +81,9 @@
 		margin: 2em
 
 @media screen and (max-width: 1060px)
-	.event
-		height: auto
-
-		
-	.datesection, .moredetails, .imagesection
-
-		// float: none
-		// display: block
 
 	.moredetails
-		font-size: .9em
+		font-size: 0.9em
 
 	.datesection
 		margin: 1.5em 0px 0px 1.5em
@@ -107,23 +99,84 @@
 			font-size: 1.5em
 
 @media screen and (max-width: 820px)
+	.event
+		height: auto
 
 	.moredetails
-		width: 100%
+		width: 68%
+		margin-bottom: 1em
+		p
+			margin: 1em
+
+	.imagesection
+		border-radius: 0
+
+
+@media screen and (max-width: 750px)
+	.imagesection
+		margin: 1em auto
+		display: block
+		float: none
+
+	.moredetails
+		width: 65%
+
 
 	.datesection
-		float: none
-		display: block
-		margin: auto
-		// text-align: center
+		margin: 2em 0 2em 1em
 		height: 245px
 		width: 215px
 
 		.month
 			font-size: 2.5em
-
 		.day
 			font-size: 6em
-
 		.time
 			font-size: 2.5em
+
+@media screen and (max-width: 665px)
+	.imagesection
+		display: inline-block
+		float: left
+		margin: 5%
+
+	.moredetails
+		width: 100%
+
+	.datesection
+		margin: 9em 5% 0 5%
+
+@media screen and (max-width: 580px)
+	.imagesection
+		margin: 3%
+
+	.datesection
+		margin-left: 3%
+		margin-right: 3%
+
+@media screen and (max-width: 530px)
+	.imagesection
+		margin: 1.75%
+	.datesection
+		margin-left: 1.75%
+		margin-right: 1.75%
+		margin-top: 6em
+
+@media screen and (max-width: 505px)
+	.imagesection, .datesection
+		display: block
+		margin: 1em auto
+		float: none
+
+@media screen and (max-width: 360px)
+	.imagesection, .datesection
+		width: 100%
+		height: auto
+		margin: 0
+
+	.datesection
+		width: 80%
+		margin: 2em auto 0 auto
+		.day
+			height: 150px
+			padding: 0.15em 0
