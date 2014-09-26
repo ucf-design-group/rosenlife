@@ -15,6 +15,7 @@ nav.main-menu.full
 		display: block
 		width: 1200px
 		margin: auto
+		max-width: 100%
 
 		li.current
 			a
@@ -62,3 +63,12 @@ nav.main-menu.compact
 
 .screen-reader-text
 	display: none
+
+@media screen and (max-width: 1260px)
+	nav.main-menu.full
+		ul
+			padding: 0 5em
+
+@media screen and (max-width: 767px)
+	nav.main-menu.full
+		text-align: center
